@@ -37,10 +37,10 @@ const states = [
 // TODO: 2. step - 
 
 // this function should extract the year from a state
-const extractYears = null;
+const extractYears = state => state.year_entered;
 
 // this function should iterate over all the states, apply the extractYears function
 // hint: use map!!!
-const stateYears = null;
+const stateYears = states.map(extractYears);
 
 console.log(stateYears);
